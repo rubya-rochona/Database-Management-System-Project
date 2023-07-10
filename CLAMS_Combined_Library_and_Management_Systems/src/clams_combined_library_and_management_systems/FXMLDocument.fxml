@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clams_combined_library_and_management_systems.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" pickOnBounds="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@img/Front_Page.png" />
+         </image>
+      </ImageView>
+      <Button id="open" fx:id="open" layoutX="744.0" layoutY="705.0" mnemonicParsing="false" onAction="#openButonAction" prefHeight="81.0" prefWidth="94.0" style="-fx-background-color: #679fdb; -fx-border-color: #00448c; -fx-border-radius: 50; -fx-background-radius: 50;" text="&gt;" textFill="#000000d3" AnchorPane.leftAnchor="744.0">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="51.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

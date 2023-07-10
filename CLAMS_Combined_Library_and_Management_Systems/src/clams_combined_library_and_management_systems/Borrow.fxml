@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #EEE9DA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clams_combined_library_and_management_systems.BorrowController">
+   <children>
+      <Text fill="#09405e" layoutX="490.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="342.13671875">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#09405e" layoutX="140.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E. ID:" wrappingWidth="74.56834346055984" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="e_id" layoutX="376.0" layoutY="350.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Enthusiast ID" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="376.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="date" layoutX="376.0" layoutY="512.0" prefHeight="45.0" prefWidth="355.0" promptText="yy/mm/dd" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="376.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Text fill="#09405e" layoutX="140.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrow Date:" wrappingWidth="159.06835582852364" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="submit" layoutX="484.0" layoutY="711.0" mnemonicParsing="false" onAction="#submitOnAction" prefHeight="43.0" prefWidth="384.0" style="-fx-background-color: #6096B4;" text="Submit" textFill="#09405e" AnchorPane.leftAnchor="475.0">
+         <font>
+            <Font name="Segoe UI Black" size="30.0" />
+         </font>
+      </Button>
+      <Text fill="#09405e" layoutX="140.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID:" wrappingWidth="115.13671875" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="book_id" layoutX="376.0" layoutY="430.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Book ID" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="376.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="4.0" layoutY="8.0" prefHeight="170.0" prefWidth="1312.0" style="-fx-background-color: #6096B4;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#eee9da" layoutX="533.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---&quot;Borrow&quot;---" wrappingWidth="232.13671875">
+               <font>
+                  <Font name="Book Antiqua Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

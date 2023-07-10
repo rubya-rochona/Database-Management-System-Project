@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #EEE9DA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clams_combined_library_and_management_systems.RegisterUserController">
+   <children>
+      <Pane prefHeight="180.0" prefWidth="1304.0" style="-fx-background-color: #6096B4;">
+         <children>
+            <Text fill="#eee9da" layoutX="472.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---&quot;Register Here&quot;---" wrappingWidth="342.13671875">
+               <font>
+                  <Font name="Book Antiqua Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#09405e" layoutX="80.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" wrappingWidth="137.13671875" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="251.91650390625">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fname" layoutX="300.0" layoutY="244.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter First Name" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="244.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dob" layoutX="300.0" layoutY="417.0" prefHeight="45.0" prefWidth="355.0" promptText="yy-mm-dd" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="417.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Text fill="#09405e" layoutX="80.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="100.06835582852364" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="509.91650390625">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="contact" layoutX="300.0" layoutY="503.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Mobile Number" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="503.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" layoutX="300.0" layoutY="588.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Address" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="300.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Text fill="#09405e" layoutX="80.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="107.06835582852364" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#09405e" layoutX="80.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date-of-Birth:" wrappingWidth="163.13671875" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="421.91650390625">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#09405e" layoutX="80.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Date:" wrappingWidth="163.1367027759552" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="regdate" layoutX="300.0" layoutY="671.0" prefHeight="45.0" prefWidth="355.0" promptText="yy-mm-dd" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="300.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Button fx:id="regbtn" layoutX="455.0" layoutY="776.0" mnemonicParsing="false" onAction="#regbtnAction" prefHeight="43.0" prefWidth="384.0" style="-fx-background-color: #6096B4;" text="Register" textFill="#eee9da" AnchorPane.leftAnchor="455.0" AnchorPane.rightAnchor="461.0">
+         <font>
+            <Font name="Segoe UI Black" size="30.0" />
+         </font>
+      </Button>
+      <Text fill="#09405e" layoutX="80.0" layoutY="363.08349609375" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" wrappingWidth="133.13671875" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lname" layoutX="300.0" layoutY="333.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Second Name" style="-fx-border-color: #09405e;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="333.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Text fx:id="fnamew" fill="RED" layoutX="300.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="355.2000000000003">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="lnamew" fill="RED" layoutX="300.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="355.2000000000003">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="dobw" fill="RED" layoutX="300.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="355.2000000000003">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="contactw" fill="RED" layoutX="300.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="355.2000000000003">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="addressw" fill="RED" layoutX="300.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="355.2000000000003">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="regdatew" fill="RED" layoutX="300.0" layoutY="734.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="355.2000000000003">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

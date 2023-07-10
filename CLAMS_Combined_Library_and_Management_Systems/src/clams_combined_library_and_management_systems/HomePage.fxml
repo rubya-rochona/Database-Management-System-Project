@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clams_combined_library_and_management_systems.HomePageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane layoutX="1.0" layoutY="-15.0" prefHeight="900.0" prefWidth="1300.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #6096B4;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="220.0" prefWidth="300.0" style="-fx-background-color: #246985;">
+               <children>
+                  <ImageView fx:id="profileImage" accessibleRole="BUTTON" fitHeight="70.0" fitWidth="70.0" layoutX="112.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/profile-user.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="lname" fill="WHITE" fontSmoothingType="LCD" layoutX="60.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" textAlignment="CENTER" wrappingWidth="172.53675079345703">
+                     <font>
+                        <Font name="Century Schoolbook" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ldes" fill="WHITE" fontSmoothingType="LCD" layoutX="59.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" textAlignment="CENTER" wrappingWidth="172.53675079345703">
+                     <font>
+                        <Font name="Bodoni MT" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="llibra" fill="WHITE" fontSmoothingType="LCD" layoutX="59.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assigned Library" textAlignment="CENTER" wrappingWidth="172.53675079345703">
+                     <font>
+                        <Font name="Bodoni MT" size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="editProfile" layoutX="157.0" layoutY="45.0" mnemonicParsing="false" onAction="#editProfileOnAction" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/pencil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fx:id="notifications" fitHeight="28.0" fitWidth="28.0" layoutX="231.0" layoutY="21.0" onDragDetected="#notificationsOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/noti.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Button fx:id="dashboard" mnemonicParsing="false" onAction="#dashboardOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="register" mnemonicParsing="false" onAction="#registerOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Register User" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="update" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Update User" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="books" mnemonicParsing="false" onAction="#booksOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Books" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="borrow" mnemonicParsing="false" onAction="#borrowOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Borrow" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="ret" mnemonicParsing="false" onAction="#retOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Return" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="history" mnemonicParsing="false" onAction="#historyOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="History" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="settings" mnemonicParsing="false" onAction="#settingsOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Settings" textFill="#fcfcff">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exitOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Exit" textFill="#fcfcff">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Text fill="#fafafa" strokeType="OUTSIDE" strokeWidth="0.0" text="© All Rights Reserved by CLAMS.  2023®" textAlignment="CENTER" wrappingWidth="300.27001571655273">
+               <VBox.margin>
+                  <Insets top="65.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

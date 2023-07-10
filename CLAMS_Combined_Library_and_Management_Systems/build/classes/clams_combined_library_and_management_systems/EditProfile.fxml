@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #93BFCF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#09405e" layoutX="90.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" wrappingWidth="137.13671875" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField layoutX="310.0" layoutY="224.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter First Name" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="310.0" layoutY="377.0" prefHeight="45.0" prefWidth="355.0" promptText="yy/mm/dd" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Text fill="#09405e" layoutX="90.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="100.06835582852364" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField layoutX="310.0" layoutY="455.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Mobile Number" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="310.0" layoutY="532.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Address" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Text fill="#09405e" layoutX="90.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="107.06835582852364" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#09405e" layoutX="90.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date-of-Birth:" wrappingWidth="163.13671875" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#09405e" layoutX="90.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Date:" wrappingWidth="163.1367027759552" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField layoutX="310.0" layoutY="612.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Resgistration Date" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+      <Button layoutX="465.0" layoutY="748.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="384.0" text="Update" textFill="#09405e">
+         <font>
+            <Font name="Segoe UI Black" size="30.0" />
+         </font>
+      </Button>
+      <Text fill="#09405e" layoutX="90.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" wrappingWidth="133.13671875" AnchorPane.leftAnchor="140.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField layoutX="310.0" layoutY="300.0" prefHeight="45.0" prefWidth="355.0" promptText="Enter Second Name" AnchorPane.leftAnchor="410.0">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

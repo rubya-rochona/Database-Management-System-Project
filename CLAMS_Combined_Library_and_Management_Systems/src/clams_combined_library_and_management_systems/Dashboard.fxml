@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #93BFCF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clams_combined_library_and_management_systems.DashboardController">
+   <children>
+      <GridPane layoutX="2.0" layoutY="202.0" prefHeight="686.0" prefWidth="1286.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="640.0" minWidth="10.0" prefWidth="314.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1204.0" minWidth="10.0" prefWidth="986.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1204.0" minWidth="10.0" prefWidth="986.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1204.0" minWidth="10.0" prefWidth="986.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="560.0" minHeight="10.0" prefHeight="362.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="560.0" minHeight="10.0" prefHeight="360.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #EEE9DA; -fx-background-radius: 50;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="124.0" layoutY="32.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@img/literature.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="listedBooks" fill="#09405e" layoutX="81.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="171.068359375">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#09405e" layoutX="41.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Listed" wrappingWidth="244.06835582852364">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #EEE9DA; -fx-background-radius: 50;" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="126.0" layoutY="35.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@img/borrow.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="issuedBooks" fill="#09405e" layoutX="75.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="162.39999999999986">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#09405e" layoutX="40.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Issued" wrappingWidth="244.06835582852364">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #EEE9DA; -fx-background-radius: 50;" GridPane.columnIndex="3">
+               <children>
+                  <Text fx:id="returnedBooks" fill="#09405e" layoutX="71.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="184.43420232832432">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#09405e" layoutX="20.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Returned" wrappingWidth="300.06835582852364">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="135.0" layoutY="34.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@img/book%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #EEE9DA; -fx-background-radius: 50;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="118.0" layoutY="47.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@img/writer.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#09405e" layoutX="85.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authors" wrappingWidth="152.06835582852364">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="listedAuthors" fill="#09405e" layoutX="61.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="202.86840465664864">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </GridPane.margin></Pane>
+            <Pane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #EEE9DA; -fx-background-radius: 50;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="132.0" layoutY="47.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@img/records.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="totalHistory" fill="#09405e" layoutX="65.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="186.86828258633614">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#09405e" layoutX="41.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Records" wrappingWidth="300.06835582852364">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #EEE9DA; -fx-background-radius: 50;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="122.0" layoutY="43.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@img/group.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#09405e" layoutX="15.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resistered Users" wrappingWidth="318.06835582852364">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="regUsers" fill="#09405e" layoutX="71.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="182.0683710873127">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </GridPane.margin>
+            </Pane>
+         </children>
+      </GridPane>
+      <Text fill="#09405e" layoutX="485.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---&quot;Dashboard&quot;---" wrappingWidth="342.13671875">
+         <font>
+            <Font name="Book Antiqua Bold" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
